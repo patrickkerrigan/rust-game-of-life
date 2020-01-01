@@ -1,0 +1,16 @@
+[package]
+name = "rust-game-of-life"
+version = "0.1.0"
+authors = ["Patrick"]
+edition = "2018"
+
+[dependencies]
+allegro = "0.0.38"
+allegro_primitives = "0.0.38"
+rand = "0.3"
+
+[profile.release]
+lto = true
+opt-level = 3
+codegen-units = 1
+panic = "abort"
